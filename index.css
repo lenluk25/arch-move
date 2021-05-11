@@ -1,0 +1,319 @@
+@font-face {
+    font-family:'NewYorkExtraLarge';
+    src: url(./assets/fonts/NewYorkExtraLargeBold.otf);
+}
+
+@font-face {
+    font-family:'SFUIDisplayBold' ;
+    src: url(./assets/fonts/SFUIDisplay-Bold.woff);
+}
+
+@font-face {
+    font-family:'SFUIDisplayLight';
+    src: url(./assets/fonts/SFUIDisplay-Light.woff);
+}
+
+@font-face {
+    font-family:'SFUIDisplayRegular';
+    src: url(./assets/fonts/SFUIDisplay-Regular.woff);
+}
+
+@font-face {
+    font-family:'SFUIDisplaySemibold';
+    src: url(./assets/fonts/SFUIDisplay-Semibold.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.title {
+    font-family: 'NewYorkExtraLarge';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 124%;
+    letter-spacing: -0.04em
+}
+
+.text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    padding: 0 16.5rem;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.btn {
+    background: #FD665E;
+    border-radius: 0.4rem;
+    border: none;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 5rem;
+}
+
+.header__wrapper-left {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 6.1rem;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header-list__item:not(:last-child) {
+    margin-right: 4.8rem;
+}
+
+.header-list__link {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.01em; 
+    color: #585858;
+}
+
+.header__wrapper-right:not(:last-child) {
+    margin-right: 1.7rem;
+}
+
+.header__search-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.header__btn {
+    width: 9.9rem;
+    height: 4.8rem;
+}
+
+.main {
+    margin-bottom: 11.2rem;
+}
+
+.main__title {
+    max-width: 80rem;
+    margin-bottom: 4.7rem;
+    font-family: 'NewYorkExtraLarge';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.2rem;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+}
+
+.title--accent {
+    color:#FD665E;
+    background-color: transparent;
+}
+
+.main__inner {
+    display: flex;
+}
+
+.main__wrapper {
+    padding-right: 5.5rem;
+}
+
+.main__text {
+    max-width: 29rem;
+    margin-bottom: 5.6rem;
+}
+
+.main__btn {
+    width: 17.9rem;
+    height: 5.6rem;
+}
+
+.main__img {
+    width: 76.5rem;
+}
+
+.gallery {
+    margin-bottom: 12.8rem;
+}
+
+.gallery__title {
+    max-width: 49.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.gallery__wrapper {
+    display: grid;
+    gap: 4.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.gallery__img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.benefits__title {
+    max-width: 39.9rem;
+    margin-bottom: 4rem;
+}
+
+.benefits__wrapper {
+    display: flex;
+    margin-bottom: 6.4rem;
+}
+
+.benefits__img {
+    max-width: 53.5rem;
+    padding-right: 15.9rem;
+}
+
+.benefits__box {
+    display: flex;
+}
+
+.benefits__box-icon {
+    width: 4.8rem;
+    height: 5.5rem;
+    margin-right: 3.8rem;
+}
+
+.benefits__box:not(:last-child) {
+    margin-bottom: 4.8rem;
+}
+
+.benefits__box-title {
+    margin-bottom: 0.8rem;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 160%;
+    letter-spacing: 0.01em
+}
+
+.benefits__text {
+    max-width: 30.5rem;
+    max-height: 7.8rem;
+}
+
+.benefits__btn {
+    width: 17.5rem;
+    height: 5.6rem;
+    margin-left: 7.9rem;
+}
+
+.testimonials {
+    height: 67.6rem;
+}
+
+.testimonials__title {
+    max-width: 36.4rem;
+}
+
+.testimonials__text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+}
+
+.realize__inner {
+    display: flex;
+    align-items: center;
+}
+
+.realize__img {
+    max-width: 49.7rem;
+    margin-right: 12.3rem;
+}
+
+.realize__title {
+    margin-bottom: 6.4rem;
+}
+
+.realize__btn {
+    width: 20.4rem;
+    height: 5.6rem;
+}
+
+.partners {
+    padding-bottom: 10.6rem;
+}
+
+.partners__title {
+    margin-bottom: 5.6rem;
+}
+
+.partners__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    padding: 8.3rem 0;
+    border-top: 0.2rem solid #F0F0F0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__list-item:not(:last-child) {
+    margin-right: 4.8rem;
+}
+
+.footer__link {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #585858;
+}
