@@ -16,9 +16,17 @@
             <div class="header__wrapper-left">
                 <a href="<?php bloginfo( 'url' ) ?>" class="header__logo-link">
                     <img class="header__logo logo" src="<?php bloginfo( 'template_url' ) ?>/assets/images/logo-arch.svg" alt="logo">
-                </a>    
-                <nav class="header__nav">
-                    <ul class="header__list">
+                </a> 
+                
+                <?php wp_nav_menu( [
+                    'theme_location'  => 'top_menu',
+                    'container'       => null, 
+                    'menu_class'      => 'header__list', 
+                    'menu_id'         => 'nav',
+                ] ); ?>
+
+                <!--<nav class="header__nav">
+                    <ul id="nav" class="header__list">
                         <li class="header-list__item">
                             <a class="header-list__link" href="#">Design Gallery</a>
                         </li>
@@ -32,7 +40,7 @@
                             <a class="header-list__link" href="#">How it Works</a>
                         </li>
                     </ul>
-                </nav>
+                </nav>-->
             </div>
             <div class="header__wrapper-right">
                 <img class="header__search-icon" src="<?php echo IMG_DIR; ?>/search.svg" alt="search">
