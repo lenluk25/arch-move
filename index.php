@@ -19,20 +19,20 @@
 
         <section class="gallery">
             <div class="container">
-                <h2 class="gallery__title title">Build professional<br> valuable room for you</h2>
+                <h2 class="gallery__title title"><?php the_field('gallery__title') ?></h2>
                 <div class="gallery__wrapper">
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-01.png" title="kitchen-1">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-01.png" alt="kitchen-1"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-1') ?>" alt="kitchen-1"></a>
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-02.png" title="bedroom">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-02.png"  alt="bedroom"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-2') ?>"  alt="bedroom"></a>
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-03.png"  title="hall">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-03.png" alt="hall"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-3') ?>" alt="hall"></a>
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-04.png" title="kitchen-2">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-04.png"  alt="kitchen-2"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-4') ?>"  alt="kitchen-2"></a>
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-01.png" title="kitchen-1">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-01.png" alt="kitchen-1"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-5') ?>" alt="kitchen-1"></a>
                     <a class="gallery__link" href="<?php echo IMG_DIR; ?>/img-02.png" title="bedroom">
-                        <img class="gallery__img" src="<?php echo IMG_DIR; ?>/img-02.png"  alt="bedroom"></a>
+                        <img class="gallery__img" src="<?php the_field('gallery__img-6') ?>"  alt="bedroom"></a>
                 </div>
             </div>    
         </section>
