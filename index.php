@@ -41,11 +41,11 @@
 
         <section class="benefits">
             <div class="container">
-                <h2 class="benefits__title title">Build your needs<br> with Archmove</h2>
+                <h2 class="benefits__title title"><?php the_field('benefits__title') ?></h2>
                 <div class="benefits__wrapper">
-                    <img class="benefits__img" src="<?php echo IMG_DIR; ?>/img-5.png" alt="img">
+                    <img class="benefits__img" src="<?php the_field('benefits__img') ?>" alt="img">
                     <div class="benefits__inner">
-                        <div class="benefits__box" >
+                        <div class="benefits__box">
                             <img class="benefits__box-icon" src="<?php echo IMG_DIR; ?>/icon-1.svg" alt="icon-1">
                             <div class="benefits__box-content">
                                 <h6 class="benefits__box-title" >100% guaranteed project completion</h6>
@@ -76,7 +76,7 @@
 
         <section class="testimonials" >
             <div class="container">
-                <h2 class="testimonials__title title">Sound Too Good<br> To Be True?</h2>
+                <h2 class="testimonials__title title"><?php the_field('benefits__title') ?></h2>
                     <div class="testimonials__slider">
                         <div class="testimonials__slide" >
                             <q class="testimonials__quote">We just wanted to thank you for this fantastic website!
